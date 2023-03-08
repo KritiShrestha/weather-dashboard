@@ -1,20 +1,44 @@
 <!DOCTYPE html>
+<!--Start of HTML-->
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header class="header">Weather Dashboard</header>
 
+<!-- Head section-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
+<!-- Start of Body -->
+<body>
 
+  <!-- Header section-->
+  <header class="header">Weather Dashboard</header>
 
+  <!-- Main section to display forecast-->
+  <main class="city-forecast">
+    <div id="weatherContainer"></div>
+    <div id="forecastTitle">5-day Forecast:</div>
+    <div id="foreCastContainer" class="forecast-box"></div>
+  </main>
 
+  <!-- Aside section for search container-->
+  <aside class="search-container">
+    <h1> Search for a city:
+      <form>
+        <input type="text" placeholder="City" id="text-input">
+        <button id="search-button">Search</button>
+      </form>
+    </h1>
+    <div id="alert-message"></div>
+    <hr>
+    <div id="history-container"></div>
+  </aside>
 
+  <!-- JS file-->
+  <script src="./assets/js/script.js"></script>
+</body>
 
-
-    <script src="./assets/js/script.js"></script>
-    </body>
+<!-- End of html-->
+</html>
